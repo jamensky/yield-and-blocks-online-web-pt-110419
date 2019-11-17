@@ -9,13 +9,9 @@ end
 
 
 
-hello_t(array = ["Tim", "Tom", "Jim"]) do |name|
-  x = []
-  array.collect do |n|
+hello_t(["Tim", "Tom", "Jim"]) do |name|
   if name.start_with?("T")
-     x.push ("Hi, #{n}")
-   end
-   puts x
+    puts "Hi, #{name}"
   end
 end
 
